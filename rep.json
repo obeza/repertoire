@@ -1,0 +1,51 @@
+{
+    "services":[
+        { "nom" : "Barbecue"},
+        {"nom" : "Clochette et la fée pirate"}
+        ],
+    "contacts":[
+        {
+            "service":"Barbecue",
+            "nom":"Wilson",
+            "prenom":"Lambert",
+            "tel":"0596 56 99 23",
+            "photo":"304361.jpg"
+        },
+                {  
+            "service":"Barbecue",
+            "nom":" Dubosc",
+            "prenom":"Franck",
+            "tel":"0596 56 99 23",
+            "photo":"19641289.jpg"
+        },{
+            "service":"Barbecue",
+            "nom":"Foresti",
+            "prenom":"Florence",
+            "tel":"0596 56 99 23",
+            "photo":"531755.jpg"
+        },
+        {
+            "service":"Clochette et la fée pirate",
+            "nom":"Whitman",
+            "prenom":"Mae",
+            "tel":"0596 56 99 23",
+            "photo": "20413218.jpg"
+        },
+        {
+            "service":"Clochette et la fée pirate",
+            "nom":"Hiddleston",
+            "prenom":"Tom",
+            "tel":"0596 56 99 23",
+            "photo":"21052836_20131031110606428.jpg"
+        },
+        {
+            "service":"Clochette et la fée pirate",
+            "nom":"Hendricks",
+            "prenom":"Christina",
+            "tel":"0596 56 99 23",
+            "photo":"20235170.jpg"
+        }
+        
+        
+        ]
+}

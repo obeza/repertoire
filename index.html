@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr" ng-app="repertoire">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Repertoire</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.2.2/css/foundation.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+</head>
+
+<body ng-controller="RepController">
+
+	<div id="conteneur" class="row">
+		<div class="small-12 large-8 medium-10 small-centered large-centered medium-centered columns">
+		<h1>Répertoire</h1>
+		<div id="chercher">
+
+			<input type="text" ng-model="rechercher" placeholder="Rechercher par nom ou prénom">
+
+			<select name="services" ng-model="rec_service">
+				<option value="">Tous les services</option>
+				<option ng-repeat="service in services" value="{{service.nom}}">service : {{service.nom}}</option>
+
+			</select>
+
+		</div>
+
+		<div class="row">
+			<div class="small-11 large-10 medium-10 small-centered large-centered medium-centered columns">
+		
+		
+		<div id "liste" ng-show="rechercher||rec_service" class="">
+					
+						<div class="row" ng-repeat="contact in contacts | filter: rechercher | filter: rec_service">
+         <div class="fiche">
+         <div class="small-4 large-4 medium-4 columns">
+         	<img class="Media-figure" src="photos/{{contact.photo}}">
+         </div>
+         
+<div class="small-8 large-8 medium-8 columns">
+        <ul >
+							
+							<li><h4>{{contact.nom}} {{contact.prenom}}</h4></li>
+							
+							<li><b>Service :</b> {{contact.service}}</li>
+							<li><b>Tél. :</b> {{contact.tel}}</li>
+							<li><b>Mobile :</b> {{contact.tel}}</li>
+						</ul>
+      </div>
+</div>
+					</div>
+		
+		</div></div></div>
+		</div>
+	</div>
+</body>
+
+</html>
