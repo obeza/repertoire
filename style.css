@@ -1,7 +1,15 @@
+html {
+    height: 100%;
+}
 body{
-	background: #62a8c0 url('images/blurback.jpg') no-repeat center center fixed;
-   -webkit-background-size: cover;
-	background-size: cover;
+	background: #6db4c6;
+	background: -webkit-radial-gradient(50% 20%, farthest-side, #e3ebc8, #6db4c6);
+	background: -moz-radial-gradient(50% 20%, closest-corner, #e3ebc8, #6db4c6);
+	background: -ms-radial-gradient(50% 20%, closest-corner, #e3ebc8, #6db4c6);
+	background-repeat: none;
+	background-attachment: fixed;
+	height: 100%;
+    margin: 0;
 	font-family: ‘open’, Arial, serif; 
 }
 #conteneur{
@@ -13,7 +21,7 @@ h1 {
 	font-weight: 800; 
 	color:#fff;
 	text-align: center;
-	text-shadow: 1px 1px 1px #555;
+	text-shadow: 1px 1px 5px #555;
 }
 
 .fiche{
