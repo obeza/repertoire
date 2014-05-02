@@ -8,7 +8,10 @@ app.controller('RepController', function($scope, jsonService){
 	jsonService.getjson().then(function(d) {
       $scope.services = d.services;
 		$scope.contacts = d.contacts;
-      
+      console.log($scope.contacts[0].photo);
+		if (!$scope.contacts[0].photo){
+			console.log(" pas de photo");
+		}
       $scope.loading =false;
    });
 	
